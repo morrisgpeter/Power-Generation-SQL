@@ -10,7 +10,7 @@ Rubens<br>
 
 MER - Requirements
 
-Aneel-Brazil needs to control the distributed generation projects installed in the country.
+Aneel-Brazil needs to control the distributed generation projects installed in the country.<br>
 Each distributed generation unit has:
 
 - unique identifier code
@@ -28,29 +28,29 @@ The producer, who can be a natural or legal person, must have his CPF or CNPJ us
 
 Description of the different types of supply groups available in binomial pricing, consumption (kWh) and demand (kW) by:
 
-High Voltage = 88 kV or more 
-A1 - 230 kV or more 
-A2 - 88 kV to 138 kV
+High Voltage = 88 kV or more <br>
+- A1 - 230 kV or more 
+- A2 - 88 kV to 138 kV
 
 Medium Voltage = 2.3 kV up to 69 kV 
-A3 - 69 kV
-A3a - 30kVa 44kV
-A4 - 2.3kVa25kV
-AS - Low Voltage (tariff framework)
+- A3 - 69 kV
+- A3a - 30kVa 44kV
+- A4 - 2.3kVa25kV
+- AS - Low Voltage (tariff framework)
 
 Group B (Low Voltage - less than 2,300 Volts); Monomial pricing, consumption (kWh).
 
-B1 - Residential
-B2 - Rural
-B3 - Other Classes B4 - Public Lighting
+- B1 - Residential
+- B2 - Rural
+- B3 - Other Classes B4 - Public Lighting
 
 Generation projects are classified into the following types of power plants: 
 
-UHE - Hydroelectric Power Plants
-UTE - Thermoelectric Power Plants
-PCH - Small Hydroelectric Power Plants EOL - Wind Power Plants
-UTN - Thermonuclear Plants
-SOL - Alternative Energy Sources CGH - Hydroelectric Generating Plant
+- UHE - Hydroelectric Power Plants
+- UTE - Thermoelectric Power Plants
+- PCH - Small Hydroelectric Power Plants EOL - Wind Power Plants
+- UTN - Thermonuclear Plants
+- SOL - Alternative Energy Sources CGH - Hydroelectric Generating Plant
 
 MER – Requisitos
 
