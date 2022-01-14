@@ -8,7 +8,7 @@ Mayara<br>
 Peter<br>
 Rubens<br>
 
-MER - Requirements
+🇬🇧 MER - Requirements
 
 Aneel-Brazil needs to control the distributed generation projects installed in the country.<br>
 Each distributed generation unit has:
@@ -52,9 +52,9 @@ Generation projects are classified into the following types of power plants:
 - UTN - Thermonuclear Plants
 - SOL - Alternative Energy Sources CGH - Hydroelectric Generating Plant
 
-MER – Requisitos
+🇧🇷 MER – Requisitos
 
-A Aneel precisa controlar os empreendimentos de geração distribuída instalados no país. 
+A Aneel precisa controlar os empreendimentos de geração distribuída instalados no país.<br>
 Cada unidade de geração distribuída tem:
 
 - código identificador único
@@ -72,21 +72,25 @@ O produtor que pode ser pessoa física ou jurídica, deverá ter seu CPF ou CNPJ
 
 Descrição dos diferentes tipos de grupos de fornecimento disponíveis em tarifação binômia, consumo (kWh) e demanda (kW) por:
 
-Alta Tensão = 88 kV ou mais A1 - 230 kV ou mais A2 - 88 kV a 138 kV
-Média Tensão = 2,3 kV até 69 kV A3 - 69kV
-A3a - 30kVa 44kV
-A4 - 2,3kVa25kV
-AS - Baixa Tensão (enquadramento tarifário)
+Alta Tensão = 88 kV ou mais 
+- A1 - 230 kV ou mais 
+- - A2 - 88 kV a 138 kV
+
+Média Tensão = 2,3 kV até 69 kV 
+- A3 - 69kV
+- A3a - 30kVa 44kV
+- A4 - 2,3kVa25kV
+- AS - Baixa Tensão (enquadramento tarifário)
 
 Grupo B (Baixa Tensão - inferior aos 2.300 Volts); Tarifação monômia, consumo (kWh).
 
-B1 - Residencial
-B2 - Rural
-B3 - Demais Classes B4 - Iluminação Pública
+- B1 - Residencial
+- B2 - Rural
+- B3 - Demais Classes B4 - Iluminação Pública
 
 Os empreendimentos de geração são classificados nos seguintes tipos de usinas: UHE - Usinas Hidrelétricas
 
-UTE - Usinas Termelétricas
-PCH - Pequenas Centrais Hidrelétricas EOL - Usinas Eolioelétricas
-UTN - Usinas Termonucleares
-SOL - Fontes Alternativas de Energia CGH - Central Geradora Hidrelétrica
+- UTE - Usinas Termelétricas
+- PCH - Pequenas Centrais Hidrelétricas EOL - Usinas Eolioelétricas
+- UTN - Usinas Termonucleares
+- SOL - Fontes Alternativas de Energia CGH - Central Geradora Hidrelétrica
