@@ -1,0 +1,2462 @@
+/* criação do banco de dados */
+use geracao_distribuida
+
+db.estado.insertMany([{
+		"_id" : 11,
+		"nm_estado" : "Rondônia",
+		"nm_sigla" : "RO"
+	},
+	{
+		"_id" : 12,
+		"nm_estado" : "Acre",
+		"nm_sigla" : "AC"
+	},
+	{
+		"_id" : 13,
+		"nm_estado" : "Amazonas",
+		"nm_sigla" : "AM"
+	},
+	{
+		"_id" : 14,
+		"nm_estado" : "Roraima",
+		"nm_sigla" : "RR"
+	},
+	{
+		"_id" : 15,
+		"nm_estado" : "Pará",
+		"nm_sigla" : "PA"
+	},
+	{
+		"_id" : 16,
+		"nm_estado" : "Amapá",
+		"nm_sigla" : "AP"
+	},
+	{
+		"_id" : 17,
+		"nm_estado" : "Tocantins",
+		"nm_sigla" : "TO"
+	},
+	{
+		"_id" : 21,
+		"nm_estado" : "Maranhão",
+		"nm_sigla" : "MA"
+	},
+	{
+		"_id" : 22,
+		"nm_estado" : "Piauí",
+		"nm_sigla" : "PI"
+	},
+	{
+		"_id" : 23,
+		"nm_estado" : "Ceará",
+		"nm_sigla" : "CE"
+	},
+	{
+		"_id" : 24,
+		"nm_estado" : "Rio Grande do Norte",
+		"nm_sigla" : "RN"
+	},
+	{
+		"_id" : 25,
+		"nm_estado" : "Paraíba",
+		"nm_sigla" : "PB"
+	},
+	{
+		"_id" : 26,
+		"nm_estado" : "Pernambuco",
+		"nm_sigla" : "PE"
+	},
+	{
+		"_id" : 27,
+		"nm_estado" : "Alagoas",
+		"nm_sigla" : "AL"
+	},
+	{
+		"_id" : 28,
+		"nm_estado" : "Sergipe",
+		"nm_sigla" : "SE"
+	},
+	{
+		"_id" : 29,
+		"nm_estado" : "Bahia",
+		"nm_sigla" : "BA"
+	},
+	{
+		"_id" : 31,
+		"nm_estado" : "Minas Gerais",
+		"nm_sigla" : "MG"
+	},
+	{
+		"_id" : 32,
+		"nm_estado" : "Espírito Santo",
+		"nm_sigla" : "ES"
+	},
+	{
+		"_id" : 33,
+		"nm_estado" : "Rio de Janeiro",
+		"nm_sigla" : "RJ"
+	},
+	{
+		"_id" : 35,
+		"nm_estado" : "São Paulo",
+		"nm_sigla" : "SP"
+	},
+	{
+		"_id" : 41,
+		"nm_estado" : "Paraná",
+		"nm_sigla" : "PR"
+	},
+	{
+		"_id" : 42,
+		"nm_estado" : "Santa Catarina",
+		"nm_sigla" : "SC"
+	},
+	{
+		"_id" : 43,
+		"nm_estado" : "Rio Grande do Sul",
+		"nm_sigla" : "RS"
+	},
+	{
+		"_id" : 50,
+		"nm_estado" : "Mato Grosso do Sul",
+		"nm_sigla" : "MS"
+	},
+	{
+		"_id" : 51,
+		"nm_estado" : "Mato Grosso",
+		"nm_sigla" : "MT"
+	},
+	{
+		"_id" : 52,
+		"nm_estado" : "Goiá¡s",
+		"nm_sigla" : "GO"
+	},
+	{
+		"_id" : 53,
+		"nm_estado" : "Distrito Federal",
+		"nm_sigla" : "DF"
+	}
+])
+	
+db.municipio.insertMany([
+	{
+		"_id" : 1,
+		"id_estado" : 29,
+		"nm_municipio" : "Abaíra"
+	},
+	{
+		"_id" : 2,
+		"id_estado" : 29,
+		"nm_municipio" : "Abaré"
+	},
+	{
+		"_id" : 3,
+		"id_estado" : 29,
+		"nm_municipio" : "Acajutiba"
+	},
+	{
+		"_id" : 4,
+		"id_estado" : 29,
+		"nm_municipio" : "Adustina"
+	},
+	{
+		"_id" : 5,
+		"id_estado" : 29,
+		"nm_municipio" : "Água Fria"
+	},
+	{
+		"_id" : 6,
+		"id_estado" : 29,
+		"nm_municipio" : "Érico Cardoso"
+	},
+	{
+		"_id" : 7,
+		"id_estado" : 29,
+		"nm_municipio" : "Aiquara"
+	},
+	{
+		"_id" : 8,
+		"id_estado" : 29,
+		"nm_municipio" : "Alagoinhas"
+	},
+	{
+		"_id" : 9,
+		"id_estado" : 29,
+		"nm_municipio" : "Alcobaça"
+	},
+	{
+		"_id" : 10,
+		"id_estado" : 29,
+		"nm_municipio" : "Almadina"
+	},
+	{
+		"_id" : 11,
+		"id_estado" : 29,
+		"nm_municipio" : "Amargosa"
+	},
+	{
+		"_id" : 12,
+		"id_estado" : 29,
+		"nm_municipio" : "Amélia Rodrigues"
+	},
+	{
+		"_id" : 13,
+		"id_estado" : 29,
+		"nm_municipio" : "América Dourada"
+	},
+	{
+		"_id" : 14,
+		"id_estado" : 29,
+		"nm_municipio" : "Anagé"
+	},
+	{
+		"_id" : 15,
+		"id_estado" : 29,
+		"nm_municipio" : "Andaraí"
+	},
+	{
+		"_id" : 16,
+		"id_estado" : 29,
+		"nm_municipio" : "Andorinha"
+	},
+	{
+		"_id" : 17,
+		"id_estado" : 29,
+		"nm_municipio" : "Angical"
+	},
+	{
+		"_id" : 18,
+		"id_estado" : 29,
+		"nm_municipio" : "Anguera"
+	},
+	{
+		"_id" : 19,
+		"id_estado" : 29,
+		"nm_municipio" : "Antas"
+	},
+	{
+		"_id" : 20,
+		"id_estado" : 29,
+		"nm_municipio" : "Antônio Cardoso"
+	},
+	{
+		"_id" : 21,
+		"id_estado" : 29,
+		"nm_municipio" : "Antônio Gonçalves"
+	},
+	{
+		"_id" : 22,
+		"id_estado" : 29,
+		"nm_municipio" : "Aporá"
+	},
+	{
+		"_id" : 23,
+		"id_estado" : 29,
+		"nm_municipio" : "Apuarema"
+	},
+	{
+		"_id" : 24,
+		"id_estado" : 29,
+		"nm_municipio" : "Aracatu"
+	},
+	{
+		"_id" : 25,
+		"id_estado" : 29,
+		"nm_municipio" : "Araças"
+	},
+	{
+		"_id" : 26,
+		"id_estado" : 29,
+		"nm_municipio" : "Araci"
+	},
+	{
+		"_id" : 27,
+		"id_estado" : 29,
+		"nm_municipio" : "Aramari"
+	},
+	{
+		"_id" : 28,
+		"id_estado" : 29,
+		"nm_municipio" : "Arataca"
+	},
+	{
+		"_id" : 29,
+		"id_estado" : 29,
+		"nm_municipio" : "Aratuípe"
+	},
+	{
+		"_id" : 30,
+		"id_estado" : 29,
+		"nm_municipio" : "Aurelino Leal"
+	},
+	{
+		"_id" : 31,
+		"id_estado" : 29,
+		"nm_municipio" : "Baianópolis"
+	},
+	{
+		"_id" : 32,
+		"id_estado" : 29,
+		"nm_municipio" : "Baixa Grande"
+	},
+	{
+		"_id" : 33,
+		"id_estado" : 29,
+		"nm_municipio" : "Banzaê"
+	},
+	{
+		"_id" : 34,
+		"id_estado" : 29,
+		"nm_municipio" : "Barra"
+	},
+	{
+		"_id" : 35,
+		"id_estado" : 29,
+		"nm_municipio" : "Barra da Estiva"
+	},
+	{
+		"_id" : 36,
+		"id_estado" : 29,
+		"nm_municipio" : "Barra do Choça"
+	},
+	{
+		"_id" : 37,
+		"id_estado" : 29,
+		"nm_municipio" : "Barra do Mendes"
+	},
+	{
+		"_id" : 38,
+		"id_estado" : 29,
+		"nm_municipio" : "Barra do Rocha"
+	},
+	{
+		"_id" : 39,
+		"id_estado" : 29,
+		"nm_municipio" : "Barreiras"
+	},
+	{
+		"_id" : 40,
+		"id_estado" : 29,
+		"nm_municipio" : "Barro Alto"
+	},
+	{
+		"_id" : 41,
+		"id_estado" : 29,
+		"nm_municipio" : "Barrocas"
+	},
+	{
+		"_id" : 42,
+		"id_estado" : 29,
+		"nm_municipio" : "Governador Lomanto Júnior"
+	},
+	{
+		"_id" : 43,
+		"id_estado" : 29,
+		"nm_municipio" : "Belmonte"
+	},
+	{
+		"_id" : 44,
+		"id_estado" : 29,
+		"nm_municipio" : "Belo Campo"
+	},
+	{
+		"_id" : 45,
+		"id_estado" : 29,
+		"nm_municipio" : "Biritinga"
+	},
+	{
+		"_id" : 46,
+		"id_estado" : 29,
+		"nm_municipio" : "Boa Nova"
+	},
+	{
+		"_id" : 47,
+		"id_estado" : 29,
+		"nm_municipio" : "Boa Vista do Tupim"
+	},
+	{
+		"_id" : 48,
+		"id_estado" : 29,
+		"nm_municipio" : "Bom Jesus da Lapa"
+	},
+	{
+		"_id" : 49,
+		"id_estado" : 29,
+		"nm_municipio" : "Bom Jesus da Serra"
+	},
+	{
+		"_id" : 50,
+		"id_estado" : 29,
+		"nm_municipio" : "Boninal"
+	},
+	{
+		"_id" : 51,
+		"id_estado" : 29,
+		"nm_municipio" : "Bonito"
+	},
+	{
+		"_id" : 52,
+		"id_estado" : 29,
+		"nm_municipio" : "Boquira"
+	},
+	{
+		"_id" : 53,
+		"id_estado" : 29,
+		"nm_municipio" : "Botuporã"
+	},
+	{
+		"_id" : 54,
+		"id_estado" : 29,
+		"nm_municipio" : "Brejões"
+	},
+	{
+		"_id" : 55,
+		"id_estado" : 29,
+		"nm_municipio" : "Brejolândia"
+	},
+	{
+		"_id" : 56,
+		"id_estado" : 29,
+		"nm_municipio" : "Brotas de Macaúbas"
+	},
+	{
+		"_id" : 57,
+		"id_estado" : 29,
+		"nm_municipio" : "Brumado"
+	},
+	{
+		"_id" : 58,
+		"id_estado" : 29,
+		"nm_municipio" : "Buerarema"
+	},
+	{
+		"_id" : 59,
+		"id_estado" : 29,
+		"nm_municipio" : "Buritirama"
+	},
+	{
+		"_id" : 60,
+		"id_estado" : 29,
+		"nm_municipio" : "Caatiba"
+	},
+	{
+		"_id" : 61,
+		"id_estado" : 29,
+		"nm_municipio" : "Cabaceiras do Paraguaçu"
+	},
+	{
+		"_id" : 62,
+		"id_estado" : 29,
+		"nm_municipio" : "Cachoeira"
+	},
+	{
+		"_id" : 63,
+		"id_estado" : 29,
+		"nm_municipio" : "Caculé"
+	},
+	{
+		"_id" : 64,
+		"id_estado" : 29,
+		"nm_municipio" : "Caém"
+	},
+	{
+		"_id" : 65,
+		"id_estado" : 29,
+		"nm_municipio" : "Caetanos"
+	},
+	{
+		"_id" : 66,
+		"id_estado" : 29,
+		"nm_municipio" : "Caetité"
+	},
+	{
+		"_id" : 67,
+		"id_estado" : 29,
+		"nm_municipio" : "Cafarnaum"
+	},
+	{
+		"_id" : 68,
+		"id_estado" : 29,
+		"nm_municipio" : "Cairu"
+	},
+	{
+		"_id" : 69,
+		"id_estado" : 29,
+		"nm_municipio" : "Caldeirão Grande"
+	},
+	{
+		"_id" : 70,
+		"id_estado" : 29,
+		"nm_municipio" : "Camacan"
+	},
+	{
+		"_id" : 71,
+		"id_estado" : 29,
+		"nm_municipio" : "Camaçari"
+	},
+	{
+		"_id" : 72,
+		"id_estado" : 29,
+		"nm_municipio" : "Camamu"
+	},
+	{
+		"_id" : 73,
+		"id_estado" : 29,
+		"nm_municipio" : "Campo Alegre de Lourdes"
+	},
+	{
+		"_id" : 74,
+		"id_estado" : 29,
+		"nm_municipio" : "Campo Formoso"
+	},
+	{
+		"_id" : 75,
+		"id_estado" : 29,
+		"nm_municipio" : "Canápolis"
+	},
+	{
+		"_id" : 76,
+		"id_estado" : 29,
+		"nm_municipio" : "Canarana"
+	},
+	{
+		"_id" : 77,
+		"id_estado" : 29,
+		"nm_municipio" : "Canavieiras"
+	},
+	{
+		"_id" : 78,
+		"id_estado" : 29,
+		"nm_municipio" : "Candeal"
+	},
+	{
+		"_id" : 79,
+		"id_estado" : 29,
+		"nm_municipio" : "Candeias"
+	},
+	{
+		"_id" : 80,
+		"id_estado" : 29,
+		"nm_municipio" : "Candiba"
+	},
+	{
+		"_id" : 81,
+		"id_estado" : 29,
+		"nm_municipio" : "Cândido Sales"
+	},
+	{
+		"_id" : 82,
+		"id_estado" : 29,
+		"nm_municipio" : "Cansanção"
+	},
+	{
+		"_id" : 83,
+		"id_estado" : 29,
+		"nm_municipio" : "Canudos"
+	},
+	{
+		"_id" : 84,
+		"id_estado" : 29,
+		"nm_municipio" : "Capela do Alto Alegre"
+	},
+	{
+		"_id" : 85,
+		"id_estado" : 29,
+		"nm_municipio" : "Capim Grosso"
+	},
+	{
+		"_id" : 86,
+		"id_estado" : 29,
+		"nm_municipio" : "Caraíbas"
+	},
+	{
+		"_id" : 87,
+		"id_estado" : 29,
+		"nm_municipio" : "Caravelas"
+	},
+	{
+		"_id" : 88,
+		"id_estado" : 29,
+		"nm_municipio" : "Cardeal da Silva"
+	},
+	{
+		"_id" : 89,
+		"id_estado" : 29,
+		"nm_municipio" : "Carinhanha"
+	},
+	{
+		"_id" : 90,
+		"id_estado" : 29,
+		"nm_municipio" : "Casa Nova"
+	},
+	{
+		"_id" : 91,
+		"id_estado" : 29,
+		"nm_municipio" : "Castro Alves"
+	},
+	{
+		"_id" : 92,
+		"id_estado" : 29,
+		"nm_municipio" : "Catolândia"
+	},
+	{
+		"_id" : 93,
+		"id_estado" : 29,
+		"nm_municipio" : "Catu"
+	},
+	{
+		"_id" : 94,
+		"id_estado" : 29,
+		"nm_municipio" : "Caturama"
+	},
+	{
+		"_id" : 95,
+		"id_estado" : 29,
+		"nm_municipio" : "Central"
+	},
+	{
+		"_id" : 96,
+		"id_estado" : 29,
+		"nm_municipio" : "Chorrochó"
+	},
+	{
+		"_id" : 97,
+		"id_estado" : 29,
+		"nm_municipio" : "Cícero Dantas"
+	},
+	{
+		"_id" : 98,
+		"id_estado" : 29,
+		"nm_municipio" : "Cipó"
+	},
+	{
+		"_id" : 99,
+		"id_estado" : 29,
+		"nm_municipio" : "Coaraci"
+	},
+	{
+		"_id" : 100,
+		"id_estado" : 29,
+		"nm_municipio" : "Cocos"
+	},
+	{
+		"_id" : 101,
+		"id_estado" : 29,
+		"nm_municipio" : "Conceição da Feira"
+	},
+	{
+		"_id" : 102,
+		"id_estado" : 29,
+		"nm_municipio" : "Conceição do Almeida"
+	},
+	{
+		"_id" : 103,
+		"id_estado" : 29,
+		"nm_municipio" : "Conceição do Coité"
+	},
+	{
+		"_id" : 104,
+		"id_estado" : 29,
+		"nm_municipio" : "Conceição do Jacuípe"
+	},
+	{
+		"_id" : 105,
+		"id_estado" : 29,
+		"nm_municipio" : "Conde"
+	},
+	{
+		"_id" : 106,
+		"id_estado" : 29,
+		"nm_municipio" : "Condeúba"
+	},
+	{
+		"_id" : 107,
+		"id_estado" : 29,
+		"nm_municipio" : "Contendas do Sincorá"
+	},
+	{
+		"_id" : 108,
+		"id_estado" : 29,
+		"nm_municipio" : "Coração de Maria"
+	},
+	{
+		"_id" : 109,
+		"id_estado" : 29,
+		"nm_municipio" : "Cordeiros"
+	},
+	{
+		"_id" : 110,
+		"id_estado" : 29,
+		"nm_municipio" : "Coribe"
+	},
+	{
+		"_id" : 111,
+		"id_estado" : 29,
+		"nm_municipio" : "Coronel João sá"
+	},
+	{
+		"_id" : 112,
+		"id_estado" : 29,
+		"nm_municipio" : "Correntina"
+	},
+	{
+		"_id" : 113,
+		"id_estado" : 29,
+		"nm_municipio" : "Cotegipe"
+	},
+	{
+		"_id" : 114,
+		"id_estado" : 29,
+		"nm_municipio" : "Cravolândia"
+	},
+	{
+		"_id" : 115,
+		"id_estado" : 29,
+		"nm_municipio" : "Crisópolis"
+	},
+	{
+		"_id" : 116,
+		"id_estado" : 29,
+		"nm_municipio" : "Cristópolis"
+	},
+	{
+		"_id" : 117,
+		"id_estado" : 29,
+		"nm_municipio" : "Cruz Das Almas"
+	},
+	{
+		"_id" : 118,
+		"id_estado" : 29,
+		"nm_municipio" : "Curaçá"
+	},
+	{
+		"_id" : 119,
+		"id_estado" : 29,
+		"nm_municipio" : "Dário Meira"
+	},
+	{
+		"_id" : 120,
+		"id_estado" : 29,
+		"nm_municipio" : "Dias D´ávila"
+	},
+	{
+		"_id" : 121,
+		"id_estado" : 29,
+		"nm_municipio" : "Dom Basílio"
+	},
+	{
+		"_id" : 122,
+		"id_estado" : 29,
+		"nm_municipio" : "Dom Macedo Costa"
+	},
+	{
+		"_id" : 123,
+		"id_estado" : 29,
+		"nm_municipio" : "Elísio Medrado"
+	},
+	{
+		"_id" : 124,
+		"id_estado" : 29,
+		"nm_municipio" : "Encruzilhada"
+	},
+	{
+		"_id" : 125,
+		"id_estado" : 29,
+		"nm_municipio" : "Entre Rios"
+	},
+	{
+		"_id" : 126,
+		"id_estado" : 29,
+		"nm_municipio" : "Esplanada"
+	},
+	{
+		"_id" : 127,
+		"id_estado" : 29,
+		"nm_municipio" : "Euclides da Cunha"
+	},
+	{
+		"_id" : 128,
+		"id_estado" : 29,
+		"nm_municipio" : "Eunápolis"
+	},
+	{
+		"_id" : 129,
+		"id_estado" : 29,
+		"nm_municipio" : "Fátima"
+	},
+	{
+		"_id" : 130,
+		"id_estado" : 29,
+		"nm_municipio" : "Feira da Mata"
+	},
+	{
+		"_id" : 131,
+		"id_estado" : 29,
+		"nm_municipio" : "Feira de Santana"
+	},
+	{
+		"_id" : 132,
+		"id_estado" : 29,
+		"nm_municipio" : "Filadélfia"
+	},
+	{
+		"_id" : 133,
+		"id_estado" : 29,
+		"nm_municipio" : "Firmino Alves"
+	},
+	{
+		"_id" : 134,
+		"id_estado" : 29,
+		"nm_municipio" : "Floresta Azul"
+	},
+	{
+		"_id" : 135,
+		"id_estado" : 29,
+		"nm_municipio" : "Formosa do Rio Preto"
+	},
+	{
+		"_id" : 136,
+		"id_estado" : 29,
+		"nm_municipio" : "Gandu"
+	},
+	{
+		"_id" : 137,
+		"id_estado" : 29,
+		"nm_municipio" : "Gavião"
+	},
+	{
+		"_id" : 138,
+		"id_estado" : 29,
+		"nm_municipio" : "Gentio do Ouro"
+	},
+	{
+		"_id" : 139,
+		"id_estado" : 29,
+		"nm_municipio" : "Glória"
+	},
+	{
+		"_id" : 140,
+		"id_estado" : 29,
+		"nm_municipio" : "Gongogi"
+	},
+	{
+		"_id" : 141,
+		"id_estado" : 29,
+		"nm_municipio" : "Governador Mangabeira"
+	},
+	{
+		"_id" : 142,
+		"id_estado" : 29,
+		"nm_municipio" : "Guajeru"
+	},
+	{
+		"_id" : 143,
+		"id_estado" : 29,
+		"nm_municipio" : "Guanambi"
+	},
+	{
+		"_id" : 144,
+		"id_estado" : 29,
+		"nm_municipio" : "Guaratinga"
+	},
+	{
+		"_id" : 145,
+		"id_estado" : 29,
+		"nm_municipio" : "Heliópolis"
+	},
+	{
+		"_id" : 146,
+		"id_estado" : 29,
+		"nm_municipio" : "Iaçu"
+	},
+	{
+		"_id" : 147,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibiassucê"
+	},
+	{
+		"_id" : 148,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibicaraí"
+	},
+	{
+		"_id" : 149,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibicoara"
+	},
+	{
+		"_id" : 150,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibicuí"
+	},
+	{
+		"_id" : 151,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibipeba"
+	},
+	{
+		"_id" : 152,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibipitanga"
+	},
+	{
+		"_id" : 153,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibiquera"
+	},
+	{
+		"_id" : 154,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibirapitanga"
+	},
+	{
+		"_id" : 155,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibirapuã"
+	},
+	{
+		"_id" : 156,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibirataia"
+	},
+	{
+		"_id" : 157,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibitiara"
+	},
+	{
+		"_id" : 158,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibititá"
+	},
+	{
+		"_id" : 159,
+		"id_estado" : 29,
+		"nm_municipio" : "Ibotirama"
+	},
+	{
+		"_id" : 160,
+		"id_estado" : 29,
+		"nm_municipio" : "Ichu"
+	},
+	{
+		"_id" : 161,
+		"id_estado" : 29,
+		"nm_municipio" : "Igaporã"
+	},
+	{
+		"_id" : 162,
+		"id_estado" : 29,
+		"nm_municipio" : "Igrapiúna"
+	},
+	{
+		"_id" : 163,
+		"id_estado" : 29,
+		"nm_municipio" : "Iguaí"
+	},
+	{
+		"_id" : 164,
+		"id_estado" : 29,
+		"nm_municipio" : "Ilhéus"
+	},
+	{
+		"_id" : 165,
+		"id_estado" : 29,
+		"nm_municipio" : "Inhambupe"
+	},
+	{
+		"_id" : 166,
+		"id_estado" : 29,
+		"nm_municipio" : "Ipecaetá"
+	},
+	{
+		"_id" : 167,
+		"id_estado" : 29,
+		"nm_municipio" : "Ipiaú"
+	},
+	{
+		"_id" : 168,
+		"id_estado" : 29,
+		"nm_municipio" : "Ipirá"
+	},
+	{
+		"_id" : 169,
+		"id_estado" : 29,
+		"nm_municipio" : "Ipupiara"
+	},
+	{
+		"_id" : 170,
+		"id_estado" : 29,
+		"nm_municipio" : "Irajuba"
+	},
+	{
+		"_id" : 171,
+		"id_estado" : 29,
+		"nm_municipio" : "Iramaia"
+	},
+	{
+		"_id" : 172,
+		"id_estado" : 29,
+		"nm_municipio" : "Iraquara"
+	},
+	{
+		"_id" : 173,
+		"id_estado" : 29,
+		"nm_municipio" : "Irará"
+	},
+	{
+		"_id" : 174,
+		"id_estado" : 29,
+		"nm_municipio" : "Irecê"
+	},
+	{
+		"_id" : 175,
+		"id_estado" : 29,
+		"nm_municipio" : "Itabela"
+	},
+	{
+		"_id" : 176,
+		"id_estado" : 29,
+		"nm_municipio" : "Itaberaba"
+	},
+	{
+		"_id" : 177,
+		"id_estado" : 29,
+		"nm_municipio" : "Itabuna"
+	},
+	{
+		"_id" : 178,
+		"id_estado" : 29,
+		"nm_municipio" : "Itacaré"
+	},
+	{
+		"_id" : 179,
+		"id_estado" : 29,
+		"nm_municipio" : "Itaeté"
+	},
+	{
+		"_id" : 180,
+		"id_estado" : 29,
+		"nm_municipio" : "Itagi"
+	},
+	{
+		"_id" : 181,
+		"id_estado" : 29,
+		"nm_municipio" : "Itagibá"
+	},
+	{
+		"_id" : 182,
+		"id_estado" : 29,
+		"nm_municipio" : "Itagimirim"
+	},
+	{
+		"_id" : 183,
+		"id_estado" : 29,
+		"nm_municipio" : "Itaguaçu da Bahia"
+	},
+	{
+		"_id" : 184,
+		"id_estado" : 29,
+		"nm_municipio" : "Itaju do Colônia"
+	},
+	{
+		"_id" : 185,
+		"id_estado" : 29,
+		"nm_municipio" : "Itajuípe"
+	},
+	{
+		"_id" : 186,
+		"id_estado" : 29,
+		"nm_municipio" : "Itamaraju"
+	},
+	{
+		"_id" : 187,
+		"id_estado" : 29,
+		"nm_municipio" : "Itamari"
+	},
+	{
+		"_id" : 188,
+		"id_estado" : 29,
+		"nm_municipio" : "Itambé"
+	},
+	{
+		"_id" : 189,
+		"id_estado" : 29,
+		"nm_municipio" : "Itanagra"
+	},
+	{
+		"_id" : 190,
+		"id_estado" : 29,
+		"nm_municipio" : "Itanhém"
+	},
+	{
+		"_id" : 191,
+		"id_estado" : 29,
+		"nm_municipio" : "Itaparica"
+	},
+	{
+		"_id" : 192,
+		"id_estado" : 29,
+		"nm_municipio" : "Itapé"
+	},
+	{
+		"_id" : 193,
+		"id_estado" : 29,
+		"nm_municipio" : "Itapebi"
+	},
+	{
+		"_id" : 194,
+		"id_estado" : 29,
+		"nm_municipio" : "Itapetinga"
+	},
+	{
+		"_id" : 195,
+		"id_estado" : 29,
+		"nm_municipio" : "Itapicuru"
+	},
+	{
+		"_id" : 196,
+		"id_estado" : 29,
+		"nm_municipio" : "Itapitanga"
+	},
+	{
+		"_id" : 197,
+		"id_estado" : 29,
+		"nm_municipio" : "Itaquara"
+	},
+	{
+		"_id" : 198,
+		"id_estado" : 29,
+		"nm_municipio" : "Itarantim"
+	},
+	{
+		"_id" : 199,
+		"id_estado" : 29,
+		"nm_municipio" : "Itatim"
+	},
+	{
+		"_id" : 200,
+		"id_estado" : 29,
+		"nm_municipio" : "Itiruçu"
+	},
+	{
+		"_id" : 201,
+		"id_estado" : 29,
+		"nm_municipio" : "Itiúba"
+	},
+	{
+		"_id" : 202,
+		"id_estado" : 29,
+		"nm_municipio" : "Itororó"
+	},
+	{
+		"_id" : 203,
+		"id_estado" : 29,
+		"nm_municipio" : "Ituaçu"
+	},
+	{
+		"_id" : 204,
+		"id_estado" : 29,
+		"nm_municipio" : "Ituberá"
+	},
+	{
+		"_id" : 205,
+		"id_estado" : 29,
+		"nm_municipio" : "Iuiú"
+	},
+	{
+		"_id" : 206,
+		"id_estado" : 29,
+		"nm_municipio" : "Jaborandi"
+	},
+	{
+		"_id" : 207,
+		"id_estado" : 29,
+		"nm_municipio" : "Jacaraci"
+	},
+	{
+		"_id" : 208,
+		"id_estado" : 29,
+		"nm_municipio" : "Jacobina"
+	},
+	{
+		"_id" : 209,
+		"id_estado" : 29,
+		"nm_municipio" : "Jaguaquara"
+	},
+	{
+		"_id" : 210,
+		"id_estado" : 29,
+		"nm_municipio" : "Jaguarari"
+	},
+	{
+		"_id" : 211,
+		"id_estado" : 29,
+		"nm_municipio" : "Jaguaripe"
+	},
+	{
+		"_id" : 212,
+		"id_estado" : 29,
+		"nm_municipio" : "Jandaíra"
+	},
+	{
+		"_id" : 213,
+		"id_estado" : 29,
+		"nm_municipio" : "Jequié"
+	},
+	{
+		"_id" : 214,
+		"id_estado" : 29,
+		"nm_municipio" : "Jeremoabo"
+	},
+	{
+		"_id" : 215,
+		"id_estado" : 29,
+		"nm_municipio" : "Jiquiriçá"
+	},
+	{
+		"_id" : 216,
+		"id_estado" : 29,
+		"nm_municipio" : "Jitaúna"
+	},
+	{
+		"_id" : 217,
+		"id_estado" : 29,
+		"nm_municipio" : "João Dourado"
+	},
+	{
+		"_id" : 218,
+		"id_estado" : 29,
+		"nm_municipio" : "Juazeiro"
+	},
+	{
+		"_id" : 219,
+		"id_estado" : 29,
+		"nm_municipio" : "Jucuruçu"
+	},
+	{
+		"_id" : 220,
+		"id_estado" : 29,
+		"nm_municipio" : "Jussara"
+	},
+	{
+		"_id" : 221,
+		"id_estado" : 29,
+		"nm_municipio" : "Jussari"
+	},
+	{
+		"_id" : 222,
+		"id_estado" : 29,
+		"nm_municipio" : "Jussiape"
+	},
+	{
+		"_id" : 223,
+		"id_estado" : 29,
+		"nm_municipio" : "Lafaiete Coutinho"
+	},
+	{
+		"_id" : 224,
+		"id_estado" : 29,
+		"nm_municipio" : "Lagoa Real"
+	},
+	{
+		"_id" : 225,
+		"id_estado" : 29,
+		"nm_municipio" : "Laje"
+	},
+	{
+		"_id" : 226,
+		"id_estado" : 29,
+		"nm_municipio" : "Lajedão"
+	},
+	{
+		"_id" : 227,
+		"id_estado" : 29,
+		"nm_municipio" : "Lajedinho"
+	},
+	{
+		"_id" : 228,
+		"id_estado" : 29,
+		"nm_municipio" : "Lajedo do Tabocal"
+	},
+	{
+		"_id" : 229,
+		"id_estado" : 29,
+		"nm_municipio" : "Lamarão"
+	},
+	{
+		"_id" : 230,
+		"id_estado" : 29,
+		"nm_municipio" : "Lapão"
+	},
+	{
+		"_id" : 231,
+		"id_estado" : 29,
+		"nm_municipio" : "Lauro de Freitas"
+	},
+	{
+		"_id" : 232,
+		"id_estado" : 29,
+		"nm_municipio" : "Lençóis"
+	},
+	{
+		"_id" : 233,
+		"id_estado" : 29,
+		"nm_municipio" : "Licínio de Almeida"
+	},
+	{
+		"_id" : 234,
+		"id_estado" : 29,
+		"nm_municipio" : "Livramento de Nossa Senhora"
+	},
+	{
+		"_id" : 235,
+		"id_estado" : 29,
+		"nm_municipio" : "Luís Eduardo Magalhães"
+	},
+	{
+		"_id" : 236,
+		"id_estado" : 29,
+		"nm_municipio" : "Macajuba"
+	},
+	{
+		"_id" : 237,
+		"id_estado" : 29,
+		"nm_municipio" : "Macarani"
+	},
+	{
+		"_id" : 238,
+		"id_estado" : 29,
+		"nm_municipio" : "Macaúbas"
+	},
+	{
+		"_id" : 239,
+		"id_estado" : 29,
+		"nm_municipio" : "Macururé"
+	},
+	{
+		"_id" : 240,
+		"id_estado" : 29,
+		"nm_municipio" : "Madre de Deus"
+	},
+	{
+		"_id" : 241,
+		"id_estado" : 29,
+		"nm_municipio" : "Maetinga"
+	},
+	{
+		"_id" : 242,
+		"id_estado" : 29,
+		"nm_municipio" : "Maiquinique"
+	},
+	{
+		"_id" : 243,
+		"id_estado" : 29,
+		"nm_municipio" : "Mairi"
+	},
+	{
+		"_id" : 244,
+		"id_estado" : 29,
+		"nm_municipio" : "Malhada"
+	},
+	{
+		"_id" : 245,
+		"id_estado" : 29,
+		"nm_municipio" : "Malhada de Pedras"
+	},
+	{
+		"_id" : 246,
+		"id_estado" : 29,
+		"nm_municipio" : "Manoel Vitorino"
+	},
+	{
+		"_id" : 247,
+		"id_estado" : 29,
+		"nm_municipio" : "Mansidão"
+	},
+	{
+		"_id" : 248,
+		"id_estado" : 29,
+		"nm_municipio" : "Maracás"
+	},
+	{
+		"_id" : 249,
+		"id_estado" : 29,
+		"nm_municipio" : "Maragogipe"
+	},
+	{
+		"_id" : 250,
+		"id_estado" : 29,
+		"nm_municipio" : "Maraú"
+	},
+	{
+		"_id" : 251,
+		"id_estado" : 29,
+		"nm_municipio" : "Marcionílio Souza"
+	},
+	{
+		"_id" : 252,
+		"id_estado" : 29,
+		"nm_municipio" : "Mascote"
+	},
+	{
+		"_id" : 253,
+		"id_estado" : 29,
+		"nm_municipio" : "Mata de São João"
+	},
+	{
+		"_id" : 254,
+		"id_estado" : 29,
+		"nm_municipio" : "Matina"
+	},
+	{
+		"_id" : 255,
+		"id_estado" : 29,
+		"nm_municipio" : "Medeiros Neto"
+	},
+	{
+		"_id" : 256,
+		"id_estado" : 29,
+		"nm_municipio" : "Miguel Calmon"
+	},
+	{
+		"_id" : 257,
+		"id_estado" : 29,
+		"nm_municipio" : "Milagres"
+	},
+	{
+		"_id" : 258,
+		"id_estado" : 29,
+		"nm_municipio" : "Mirangaba"
+	},
+	{
+		"_id" : 259,
+		"id_estado" : 29,
+		"nm_municipio" : "Mirante"
+	},
+	{
+		"_id" : 260,
+		"id_estado" : 29,
+		"nm_municipio" : "Monte Santo"
+	},
+	{
+		"_id" : 261,
+		"id_estado" : 29,
+		"nm_municipio" : "Morpará"
+	},
+	{
+		"_id" : 262,
+		"id_estado" : 29,
+		"nm_municipio" : "Morro do Chapéu"
+	},
+	{
+		"_id" : 263,
+		"id_estado" : 29,
+		"nm_municipio" : "Mortugaba"
+	},
+	{
+		"_id" : 264,
+		"id_estado" : 29,
+		"nm_municipio" : "Mucugê"
+	},
+	{
+		"_id" : 265,
+		"id_estado" : 29,
+		"nm_municipio" : "Mucuri"
+	},
+	{
+		"_id" : 266,
+		"id_estado" : 29,
+		"nm_municipio" : "Mulungu do Morro"
+	},
+	{
+		"_id" : 267,
+		"id_estado" : 29,
+		"nm_municipio" : "Mundo Novo"
+	},
+	{
+		"_id" : 268,
+		"id_estado" : 29,
+		"nm_municipio" : "Muniz Ferreira"
+	},
+	{
+		"_id" : 269,
+		"id_estado" : 29,
+		"nm_municipio" : "Muquém de São Francisco"
+	},
+	{
+		"_id" : 270,
+		"id_estado" : 29,
+		"nm_municipio" : "Muritiba"
+	},
+	{
+		"_id" : 271,
+		"id_estado" : 29,
+		"nm_municipio" : "Mutuípe"
+	},
+	{
+		"_id" : 272,
+		"id_estado" : 29,
+		"nm_municipio" : "Nazaré"
+	},
+	{
+		"_id" : 273,
+		"id_estado" : 29,
+		"nm_municipio" : "Nilo Peçanha"
+	},
+	{
+		"_id" : 274,
+		"id_estado" : 29,
+		"nm_municipio" : "Nordestina"
+	},
+	{
+		"_id" : 275,
+		"id_estado" : 29,
+		"nm_municipio" : "Nova Canaã"
+	},
+	{
+		"_id" : 276,
+		"id_estado" : 29,
+		"nm_municipio" : "Nova Fátima"
+	},
+	{
+		"_id" : 277,
+		"id_estado" : 29,
+		"nm_municipio" : "Nova Ibiá"
+	},
+	{
+		"_id" : 278,
+		"id_estado" : 29,
+		"nm_municipio" : "Nova Itarana"
+	},
+	{
+		"_id" : 279,
+		"id_estado" : 29,
+		"nm_municipio" : "Nova Redenção"
+	},
+	{
+		"_id" : 280,
+		"id_estado" : 29,
+		"nm_municipio" : "Nova Soure"
+	},
+	{
+		"_id" : 281,
+		"id_estado" : 29,
+		"nm_municipio" : "Nova Viçosa"
+	},
+	{
+		"_id" : 282,
+		"id_estado" : 29,
+		"nm_municipio" : "Novo Horizonte"
+	},
+	{
+		"_id" : 283,
+		"id_estado" : 29,
+		"nm_municipio" : "Novo Triunfo"
+	},
+	{
+		"_id" : 284,
+		"id_estado" : 29,
+		"nm_municipio" : "Olindina"
+	},
+	{
+		"_id" : 285,
+		"id_estado" : 29,
+		"nm_municipio" : "Oliveira Dos Brejinhos"
+	},
+	{
+		"_id" : 286,
+		"id_estado" : 29,
+		"nm_municipio" : "Ouriçangas"
+	},
+	{
+		"_id" : 287,
+		"id_estado" : 29,
+		"nm_municipio" : "Ourolândia"
+	},
+	{
+		"_id" : 288,
+		"id_estado" : 29,
+		"nm_municipio" : "Palmas de Monte Alto"
+	},
+	{
+		"_id" : 289,
+		"id_estado" : 29,
+		"nm_municipio" : "Palmeiras"
+	},
+	{
+		"_id" : 290,
+		"id_estado" : 29,
+		"nm_municipio" : "Paramirim"
+	},
+	{
+		"_id" : 291,
+		"id_estado" : 29,
+		"nm_municipio" : "Paratinga"
+	},
+	{
+		"_id" : 292,
+		"id_estado" : 29,
+		"nm_municipio" : "Paripiranga"
+	},
+	{
+		"_id" : 293,
+		"id_estado" : 29,
+		"nm_municipio" : "Pau Brasil"
+	},
+	{
+		"_id" : 294,
+		"id_estado" : 29,
+		"nm_municipio" : "Paulo Afonso"
+	},
+	{
+		"_id" : 295,
+		"id_estado" : 29,
+		"nm_municipio" : "pé de Serra"
+	},
+	{
+		"_id" : 296,
+		"id_estado" : 29,
+		"nm_municipio" : "Pedrão"
+	},
+	{
+		"_id" : 297,
+		"id_estado" : 29,
+		"nm_municipio" : "Pedro Alexandre"
+	},
+	{
+		"_id" : 298,
+		"id_estado" : 29,
+		"nm_municipio" : "Piatã"
+	},
+	{
+		"_id" : 299,
+		"id_estado" : 29,
+		"nm_municipio" : "Pilão Arcado"
+	},
+	{
+		"_id" : 300,
+		"id_estado" : 29,
+		"nm_municipio" : "Pindaí"
+	},
+	{
+		"_id" : 301,
+		"id_estado" : 29,
+		"nm_municipio" : "Pindobaçu"
+	},
+	{
+		"_id" : 302,
+		"id_estado" : 29,
+		"nm_municipio" : "Pintadas"
+	},
+	{
+		"_id" : 303,
+		"id_estado" : 29,
+		"nm_municipio" : "Piraí do Norte"
+	},
+	{
+		"_id" : 304,
+		"id_estado" : 29,
+		"nm_municipio" : "Piripá"
+	},
+	{
+		"_id" : 305,
+		"id_estado" : 29,
+		"nm_municipio" : "Piritiba"
+	},
+	{
+		"_id" : 306,
+		"id_estado" : 29,
+		"nm_municipio" : "Planaltino"
+	},
+	{
+		"_id" : 307,
+		"id_estado" : 29,
+		"nm_municipio" : "Planalto"
+	},
+	{
+		"_id" : 308,
+		"id_estado" : 29,
+		"nm_municipio" : "Poções"
+	},
+	{
+		"_id" : 309,
+		"id_estado" : 29,
+		"nm_municipio" : "Pojuca"
+	},
+	{
+		"_id" : 310,
+		"id_estado" : 29,
+		"nm_municipio" : "Ponto Novo"
+	},
+	{
+		"_id" : 311,
+		"id_estado" : 29,
+		"nm_municipio" : "Porto Seguro"
+	},
+	{
+		"_id" : 312,
+		"id_estado" : 29,
+		"nm_municipio" : "Potiraguá"
+	},
+	{
+		"_id" : 313,
+		"id_estado" : 29,
+		"nm_municipio" : "Prado"
+	},
+	{
+		"_id" : 314,
+		"id_estado" : 29,
+		"nm_municipio" : "Presidente Dutra"
+	},
+	{
+		"_id" : 315,
+		"id_estado" : 29,
+		"nm_municipio" : "Presidente Jânio Quadros"
+	},
+	{
+		"_id" : 316,
+		"id_estado" : 29,
+		"nm_municipio" : "Presidente Tancredo Neves"
+	},
+	{
+		"_id" : 317,
+		"id_estado" : 29,
+		"nm_municipio" : "Queimadas"
+	},
+	{
+		"_id" : 318,
+		"id_estado" : 29,
+		"nm_municipio" : "Quijingue"
+	},
+	{
+		"_id" : 319,
+		"id_estado" : 29,
+		"nm_municipio" : "Quixabeira"
+	},
+	{
+		"_id" : 320,
+		"id_estado" : 29,
+		"nm_municipio" : "Rafael Jambeiro"
+	},
+	{
+		"_id" : 321,
+		"id_estado" : 29,
+		"nm_municipio" : "Remanso"
+	},
+	{
+		"_id" : 322,
+		"id_estado" : 29,
+		"nm_municipio" : "Retirolândia"
+	},
+	{
+		"_id" : 323,
+		"id_estado" : 29,
+		"nm_municipio" : "Riachão Das Neves"
+	},
+	{
+		"_id" : 324,
+		"id_estado" : 29,
+		"nm_municipio" : "Riachão do Jacuípe"
+	},
+	{
+		"_id" : 325,
+		"id_estado" : 29,
+		"nm_municipio" : "Riacho de Santana"
+	},
+	{
+		"_id" : 326,
+		"id_estado" : 29,
+		"nm_municipio" : "Ribeira do Amparo"
+	},
+	{
+		"_id" : 327,
+		"id_estado" : 29,
+		"nm_municipio" : "Ribeira do Pombal"
+	},
+	{
+		"_id" : 328,
+		"id_estado" : 29,
+		"nm_municipio" : "Ribeirão do Largo"
+	},
+	{
+		"_id" : 329,
+		"id_estado" : 29,
+		"nm_municipio" : "Rio de Contas"
+	},
+	{
+		"_id" : 330,
+		"id_estado" : 29,
+		"nm_municipio" : "Rio do Antônio"
+	},
+	{
+		"_id" : 331,
+		"id_estado" : 29,
+		"nm_municipio" : "Rio do Pires"
+	},
+	{
+		"_id" : 332,
+		"id_estado" : 29,
+		"nm_municipio" : "Rio Real"
+	},
+	{
+		"_id" : 333,
+		"id_estado" : 29,
+		"nm_municipio" : "Rodelas"
+	},
+	{
+		"_id" : 334,
+		"id_estado" : 29,
+		"nm_municipio" : "Ruy Barbosa"
+	},
+	{
+		"_id" : 335,
+		"id_estado" : 29,
+		"nm_municipio" : "Salinas da Margarida"
+	},
+	{
+		"_id" : 336,
+		"id_estado" : 29,
+		"nm_municipio" : "Salvador"
+	},
+	{
+		"_id" : 337,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Bárbara"
+	},
+	{
+		"_id" : 338,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Brígida"
+	},
+	{
+		"_id" : 339,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Cruz Cabrália"
+	},
+	{
+		"_id" : 340,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Cruz da Vitória"
+	},
+	{
+		"_id" : 341,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Inês"
+	},
+	{
+		"_id" : 342,
+		"id_estado" : 29,
+		"nm_municipio" : "Santaluz"
+	},
+	{
+		"_id" : 343,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Luzia"
+	},
+	{
+		"_id" : 344,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Maria da Vitória"
+	},
+	{
+		"_id" : 345,
+		"id_estado" : 29,
+		"nm_municipio" : "Santana"
+	},
+	{
+		"_id" : 346,
+		"id_estado" : 29,
+		"nm_municipio" : "Santanópolis"
+	},
+	{
+		"_id" : 347,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Rita de Cássia"
+	},
+	{
+		"_id" : 348,
+		"id_estado" : 29,
+		"nm_municipio" : "Santa Teresinha"
+	},
+	{
+		"_id" : 349,
+		"id_estado" : 29,
+		"nm_municipio" : "Santo Amaro"
+	},
+	{
+		"_id" : 350,
+		"id_estado" : 29,
+		"nm_municipio" : "Santo Antônio de Jesus"
+	},
+	{
+		"_id" : 351,
+		"id_estado" : 29,
+		"nm_municipio" : "Santo Estêvão"
+	},
+	{
+		"_id" : 352,
+		"id_estado" : 29,
+		"nm_municipio" : "São Desidério"
+	},
+	{
+		"_id" : 353,
+		"id_estado" : 29,
+		"nm_municipio" : "São Domingos"
+	},
+	{
+		"_id" : 354,
+		"id_estado" : 29,
+		"nm_municipio" : "São Félix"
+	},
+	{
+		"_id" : 355,
+		"id_estado" : 29,
+		"nm_municipio" : "São Félix do Coribe"
+	},
+	{
+		"_id" : 356,
+		"id_estado" : 29,
+		"nm_municipio" : "São Felipe"
+	},
+	{
+		"_id" : 357,
+		"id_estado" : 29,
+		"nm_municipio" : "São Francisco do Conde"
+	},
+	{
+		"_id" : 358,
+		"id_estado" : 29,
+		"nm_municipio" : "São Gabriel"
+	},
+	{
+		"_id" : 359,
+		"id_estado" : 29,
+		"nm_municipio" : "São Gonçalo Dos Campos"
+	},
+	{
+		"_id" : 360,
+		"id_estado" : 29,
+		"nm_municipio" : "São José da Vitória"
+	},
+	{
+		"_id" : 361,
+		"id_estado" : 29,
+		"nm_municipio" : "São José do Jacuípe"
+	},
+	{
+		"_id" : 362,
+		"id_estado" : 29,
+		"nm_municipio" : "São Miguel Das Matas"
+	},
+	{
+		"_id" : 363,
+		"id_estado" : 29,
+		"nm_municipio" : "São Sebastião do Passé"
+	},
+	{
+		"_id" : 364,
+		"id_estado" : 29,
+		"nm_municipio" : "Sapeaçu"
+	},
+	{
+		"_id" : 365,
+		"id_estado" : 29,
+		"nm_municipio" : "Sátiro Dias"
+	},
+	{
+		"_id" : 366,
+		"id_estado" : 29,
+		"nm_municipio" : "Saubara"
+	},
+	{
+		"_id" : 367,
+		"id_estado" : 29,
+		"nm_municipio" : "Saúde"
+	},
+	{
+		"_id" : 368,
+		"id_estado" : 29,
+		"nm_municipio" : "Seabra"
+	},
+	{
+		"_id" : 369,
+		"id_estado" : 29,
+		"nm_municipio" : "Sebastião Laranjeiras"
+	},
+	{
+		"_id" : 370,
+		"id_estado" : 29,
+		"nm_municipio" : "Senhor do Bonfim"
+	},
+	{
+		"_id" : 371,
+		"id_estado" : 29,
+		"nm_municipio" : "Serra do Ramalho"
+	},
+	{
+		"_id" : 372,
+		"id_estado" : 29,
+		"nm_municipio" : "Sento sé"
+	},
+	{
+		"_id" : 373,
+		"id_estado" : 29,
+		"nm_municipio" : "Serra Dourada"
+	},
+	{
+		"_id" : 374,
+		"id_estado" : 29,
+		"nm_municipio" : "Serra Preta"
+	},
+	{
+		"_id" : 375,
+		"id_estado" : 29,
+		"nm_municipio" : "Serrinha"
+	},
+	{
+		"_id" : 376,
+		"id_estado" : 29,
+		"nm_municipio" : "Serrolândia"
+	},
+	{
+		"_id" : 377,
+		"id_estado" : 29,
+		"nm_municipio" : "Simões Filho"
+	},
+	{
+		"_id" : 378,
+		"id_estado" : 29,
+		"nm_municipio" : "Sítio do Mato"
+	},
+	{
+		"_id" : 379,
+		"id_estado" : 29,
+		"nm_municipio" : "Sítio do Quinto"
+	},
+	{
+		"_id" : 380,
+		"id_estado" : 29,
+		"nm_municipio" : "Sobradinho"
+	},
+	{
+		"_id" : 381,
+		"id_estado" : 29,
+		"nm_municipio" : "Souto Soares"
+	},
+	{
+		"_id" : 382,
+		"id_estado" : 29,
+		"nm_municipio" : "Tabocas do Brejo Velho"
+	},
+	{
+		"_id" : 383,
+		"id_estado" : 29,
+		"nm_municipio" : "Tanhaçu"
+	},
+	{
+		"_id" : 384,
+		"id_estado" : 29,
+		"nm_municipio" : "Tanque Novo"
+	},
+	{
+		"_id" : 385,
+		"id_estado" : 29,
+		"nm_municipio" : "Tanquinho"
+	},
+	{
+		"_id" : 386,
+		"id_estado" : 29,
+		"nm_municipio" : "Taperoá"
+	},
+	{
+		"_id" : 387,
+		"id_estado" : 29,
+		"nm_municipio" : "Tapiramutá"
+	},
+	{
+		"_id" : 388,
+		"id_estado" : 29,
+		"nm_municipio" : "Teixeira de Freitas"
+	},
+	{
+		"_id" : 389,
+		"id_estado" : 29,
+		"nm_municipio" : "Teodoro Sampaio"
+	},
+	{
+		"_id" : 390,
+		"id_estado" : 29,
+		"nm_municipio" : "Teofilândia"
+	},
+	{
+		"_id" : 391,
+		"id_estado" : 29,
+		"nm_municipio" : "Teolândia"
+	},
+	{
+		"_id" : 392,
+		"id_estado" : 29,
+		"nm_municipio" : "Terra Nova"
+	},
+	{
+		"_id" : 393,
+		"id_estado" : 29,
+		"nm_municipio" : "Tremedal"
+	},
+	{
+		"_id" : 394,
+		"id_estado" : 29,
+		"nm_municipio" : "Tucano"
+	},
+	{
+		"_id" : 395,
+		"id_estado" : 29,
+		"nm_municipio" : "Uauá"
+	},
+	{
+		"_id" : 396,
+		"id_estado" : 29,
+		"nm_municipio" : "Ubaíra"
+	},
+	{
+		"_id" : 397,
+		"id_estado" : 29,
+		"nm_municipio" : "Ubaitaba"
+	},
+	{
+		"_id" : 398,
+		"id_estado" : 29,
+		"nm_municipio" : "Ubatã"
+	},
+	{
+		"_id" : 399,
+		"id_estado" : 29,
+		"nm_municipio" : "Uibaí"
+	},
+	{
+		"_id" : 400,
+		"id_estado" : 29,
+		"nm_municipio" : "Umburanas"
+	},
+	{
+		"_id" : 401,
+		"id_estado" : 29,
+		"nm_municipio" : "Una"
+	},
+	{
+		"_id" : 402,
+		"id_estado" : 29,
+		"nm_municipio" : "Urandi"
+	},
+	{
+		"_id" : 403,
+		"id_estado" : 29,
+		"nm_municipio" : "Uruçuca"
+	},
+	{
+		"_id" : 404,
+		"id_estado" : 29,
+		"nm_municipio" : "Utinga"
+	},
+	{
+		"_id" : 405,
+		"id_estado" : 29,
+		"nm_municipio" : "Valença"
+	},
+	{
+		"_id" : 406,
+		"id_estado" : 29,
+		"nm_municipio" : "Valente"
+	},
+	{
+		"_id" : 407,
+		"id_estado" : 29,
+		"nm_municipio" : "Várzea da Roça"
+	},
+	{
+		"_id" : 408,
+		"id_estado" : 29,
+		"nm_municipio" : "Várzea do Poço"
+	},
+	{
+		"_id" : 409,
+		"id_estado" : 29,
+		"nm_municipio" : "Várzea Nova"
+	},
+	{
+		"_id" : 410,
+		"id_estado" : 29,
+		"nm_municipio" : "Varzedo"
+	},
+	{
+		"_id" : 411,
+		"id_estado" : 29,
+		"nm_municipio" : "Vera Cruz"
+	},
+	{
+		"_id" : 412,
+		"id_estado" : 29,
+		"nm_municipio" : "Vereda"
+	},
+	{
+		"_id" : 413,
+		"id_estado" : 29,
+		"nm_municipio" : "Vitória da Conquista"
+	},
+	{
+		"_id" : 414,
+		"id_estado" : 29,
+		"nm_municipio" : "Wagner"
+	},
+	{
+		"_id" : 415,
+		"id_estado" : 29,
+		"nm_municipio" : "Wanderley"
+	},
+	{
+		"_id" : 416,
+		"id_estado" : 29,
+		"nm_municipio" : "Wenceslau Guimarães"
+	},
+	{
+		"_id" : 417,
+		"id_estado" : 29,
+		"nm_municipio" : "Xique-xique"
+	}
+])
+
+db.cad_tipo_unid_geracao.insertMany([
+	{
+		"_id" : 1,
+		"nm_sigla" : "UHE",
+		"nm_tipo_unid_geracao" : "Usinas Hidrelétricas"
+	},
+	{
+		"_id" : 2,
+		"nm_sigla" : "UTE",
+		"nm_tipo_unid_geracao" : "Usinas Termelétricas"
+	},
+	{
+		"_id" : 3,
+		"nm_sigla" : "PCH",
+		"nm_tipo_unid_geracao" : "Pequenas Centrais Hidrelétricas"
+	},
+	{
+		"_id" : 4,
+		"nm_sigla" : "EOL",
+		"nm_tipo_unid_geracao" : " Usinas Eolioelétricas"
+	},
+	{
+		"_id" : 5,
+		"nm_sigla" : "UTN",
+		"nm_tipo_unid_geracao" : " Usinas Termonucleares"
+	},
+	{
+		"_id" : 6,
+		"nm_sigla" : "SOL",
+		"nm_tipo_unid_geracao" : " Fontes Alternativas de Energia"
+	},
+	{
+		"_id" : 7,
+		"nm_sigla" : "CGH",
+		"nm_tipo_unid_geracao" : " Central Geradora Hidrelétrica"
+	}
+])
+
+db.cad_grupo_fornecimento.insertMany([
+	{
+		"_id" : 1,
+		"nm_grupo_fornecimento" : "A1",
+		"tensao" : "A",
+		"ds_grupo_fornecimento" : "230 kV ou mais"
+	},
+	{
+		"_id" : 2,
+		"nm_grupo_fornecimento" : "A2",
+		"tensao" : "A",
+		"ds_grupo_fornecimento" : "88 kV a 138 kV"
+	},
+	{
+		"_id" : 3,
+		"nm_grupo_fornecimento" : "A3",
+		"tensao" : "M",
+		"ds_grupo_fornecimento" : "69 kV"
+	},
+	{
+		"_id" : 4,
+		"nm_grupo_fornecimento" : "A3a",
+		"tensao" : "M",
+		"ds_grupo_fornecimento" : "30 kV a 44 kV"
+	},
+	{
+		"_id" : 5,
+		"nm_grupo_fornecimento" : "A4",
+		"tensao" : "M",
+		"ds_grupo_fornecimento" : "2,3 kV a 25 kV"
+	},
+	{
+		"_id" : 6,
+		"nm_grupo_fornecimento" : "B1",
+		"tensao" : "B",
+		"ds_grupo_fornecimento" : "Residencial"
+	},
+	{
+		"_id" : 7,
+		"nm_grupo_fornecimento" : "B2",
+		"tensao" : "B",
+		"ds_grupo_fornecimento" : "Rural"
+	},
+	{
+		"_id" : 8,
+		"nm_grupo_fornecimento" : "B3",
+		"tensao" : "B",
+		"ds_grupo_fornecimento" : "Demais Classes"
+	},
+	{
+		"_id" : 9,
+		"nm_grupo_fornecimento" : "B4",
+		"tensao" : "B",
+		"ds_grupo_fornecimento" : "Iluminção Pública"
+	}
+])
+
+db.cad_distribuidora.insertMany([
+	{ "_id": 1, "nn_cnpj": "27812487000163", "nm_distribuidora": "Eletro" },
+	{ "_id": 2, "nn_cnpj": "02049870000180", "nm_distribuidora": "Coelba" }
+])
+
+db.cad_produtor.insertMany([
+	{ "_id": 1, "cad_tipo_produtor": "PF", "dt_cadastro": new Date(), "nm_produtor": "Hugo Borges", "ds_email": "email@teste.com", "ds_telefone": "7198955354", "sexo": "M", "dt_nascimento": "1990-01-01", "nn_cpf": "1111111111" },
+	{ "_id": 2, "cad_tipo_produtor": "PJ", "dt_cadastro": new Date(), "nm_produtor": "Hugo Borges", "ds_email": "email@teste.com", "ds_telefone": "7198955354", "nn_cnpj": "29172916000100", "nm_razao_social": "Razão social" },
+])
+
+db.cad_unid_geracao_distribuida.insertMany([
+	{ 
+		"_id": 1,
+		"produtor": {
+			"_id": 1,
+			"cad_tipo_produtor": "PF",
+			"nm_produtor": "Hugo Borges",
+			"ds_email": "email@teste.com",
+			"ds_telefone": "7198955354"
+		},
+		"distribuidora": {
+			"_id": 1, 
+			"nn_cnpj": "27812487000163", 
+			"nm_distribuidora": "Eletro"
+		},
+		"tipo_unid_geracao": {
+			"_id" : 1,
+			"nm_sigla" : "UHE",
+			"nm_tipo_unid_geracao" : "Usinas Hidrelétricas"
+		},
+		"grupo_fornecimento": {
+			"_id" : 1,
+			"nm_grupo_fornecimento" : "A1",
+			"tensao" : "A",
+			"ds_grupo_fornecimento" : "230 kV ou mais"
+		},
+		"dt_instalacao": "1990-01-01",
+		"nn_portencia": 100,
+		"endereco": {
+			"cep": "40000-000",
+			"ds_logradouro": "Logradouro",
+			"ds_complemento": "",
+			"nm_numero": "1",
+			"ds_bairro": "Bairro",
+			"municipio": {
+				"_id": 336,
+				"id_estado": 29,
+				"nm_municipio": "Salvador",
+				"estado": {
+					"_id": 29,
+					"nm_estado": "Bahia",
+					"nm_sigla": "BA"
+				}
+			}
+		},
+		"prod_geracao_distribuida": {
+			"_id": 2,
+			"dt_periodo_incio": "2021-01-01",
+			"dt_periodo_fim": "2021-01-01",
+			"nn_producao": 120,
+			"nn_consumo": 100,
+		},
+		"historico": [{
+			"_id": 1,
+			"new_tipo_unidade_geracao": "A2",
+			"ds_historico": "MENSAGEM ..."
+		}]
+	},
+	{
+		"_id": 2,
+		"produtor": {
+			"_id": 2, 
+			"cad_tipo_produtor": "PJ", 
+			"dt_cadastro": new Date(), 
+			"nm_produtor": "Empresa Fantasma", 
+			"ds_email": "email@teste.com", 
+			"ds_telefone": "7198955354"
+		},
+		"distribuidora": {
+			"_id": 2,
+			"nn_cnpj": "02049870000180",
+			"nm_distribuidora": "Coelba"
+		},
+		"tipo_unid_geracao": {
+			"_id" : 1,
+			"nm_sigla" : "UHE",
+			"nm_tipo_unid_geracao" : "Usinas Hidrelétricas"
+		},
+		"grupo_fornecimento": {
+			"_id" : 6,
+			"nm_grupo_fornecimento" : "B1",
+			"tensao" : "B",
+			"ds_grupo_fornecimento" : "Residencial"
+		},
+		"dt_instalacao": "1990-01-01",
+		"nn_portencia": 100,
+		"endereco": {
+			"cep": "40000-000",
+			"ds_logradouro": "Logradouro",
+			"ds_complemento": "",
+			"nm_numero": "1",
+			"ds_bairro": "Bairro",
+			"municipio": {
+				"_id": 336,
+				"id_estado": 29,
+				"nm_municipio": "Salvador",
+				"estado": {
+					"_id": 29,
+					"nm_estado": "Bahia",
+					"nm_sigla": "BA"
+				}
+			}
+		},
+		"prod_geracao_distribuida": {
+			"_id": 1,
+			"dt_periodo_incio": "2021-01-01",
+			"dt_periodo_fim": "2021-01-01",
+			"nn_producao": 80,
+			"nn_consumo": 100,
+		},
+		"historico": [{
+			"_id": 1,
+			"new_tipo_unidade_geracao": "A2",
+			"ds_historico": "MENSAGEM ..."
+		}]
+	}
+	
+])
+
+show collections
+
+/* Consulta que retorna as unidades de geração distribuida com produção acima de 100 */
+/* Existe essa mesma consulta em sql */
+db.cad_unid_geracao_distribuida.find({ "prod_geracao_distribuida.nn_producao": { $gt: 100 } })
+
+/* recupera todas as unidades de geração distribuida de alta tensão */
+/* mesma funcionalidade da views existente no banco de dados relacional */
+db.cad_unid_geracao_distribuida.find({ "grupo_fornecimento.tensao": 'A' })
+
