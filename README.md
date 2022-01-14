@@ -1,12 +1,11 @@
-# SQL
-Project Electric Generation
+# Power Generation - SQL
 
 Group 2
-Diego <br>
-Hugo<br>
-Mayara<br>
-Peter<br>
-Rubens<br>
+Diego Cunha<br>
+Hugo Borges<br>
+Mayara Carvalho<br>
+Peter Morris<br>
+Rubens Teixeira<br>
 
 🇬🇧 MER - Requirements
 
@@ -52,6 +51,8 @@ Generation projects are classified into the following types of power plants:
 - UTN - Thermonuclear Plants
 - SOL - Alternative Energy Sources CGH - Hydroelectric Generating Plant
 
+![MER](https://user-images.githubusercontent.com/69020265/149558735-f04cca00-6d9b-4f1c-94ac-4ce27d6d4bd8.png)
+
 🇧🇷 MER – Requisitos
 
 A Aneel precisa controlar os empreendimentos de geração distribuída instalados no país.<br>
@@ -94,3 +95,4 @@ Os empreendimentos de geração são classificados nos seguintes tipos de usinas
 - PCH - Pequenas Centrais Hidrelétricas EOL - Usinas Eolioelétricas
 - UTN - Usinas Termonucleares
 - SOL - Fontes Alternativas de Energia CGH - Central Geradora Hidrelétrica
+
