@@ -1,6 +1,6 @@
 # Power Generation - SQL
 
-Group 2
+Group 2 <br>
 Diego Cunha<br>
 Hugo Borges<br>
 Mayara Carvalho<br>
