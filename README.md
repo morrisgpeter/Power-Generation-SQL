@@ -74,7 +74,7 @@ Descrição dos diferentes tipos de grupos de fornecimento disponíveis em tarif
 
 Alta Tensão = 88 kV ou mais 
 - A1 - 230 kV ou mais 
-- - A2 - 88 kV a 138 kV
+- A2 - 88 kV a 138 kV
 
 Média Tensão = 2,3 kV até 69 kV 
 - A3 - 69kV
