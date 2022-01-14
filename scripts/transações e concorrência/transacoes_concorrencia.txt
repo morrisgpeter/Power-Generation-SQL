@@ -1,0 +1,4 @@
+Na procedure cadastrar_produtor que é utilizada para fazer o cadastro de um registro na tabela "cad_produtor" 
+e nas tabelas "cad_detalhe_pessoa_fisica" e "cad_detalhe_pessoa_juridica" utilizamos transação pois sempre 
+realizamos a inserção em duas tabelas.
+Caso ocorra tudo bem realizamos o commit caso ocorra algum erro de banco de dados realizamos o rolback da operação;

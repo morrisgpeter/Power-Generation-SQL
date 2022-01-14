@@ -1,0 +1,16 @@
+/* BACKUP - Salvando o backup */
+mysqldump -u root -p -R --databases geracao_distribuida > "C:\Users\diego\dump.sql"
+
+/* Deletando o banco de dados */
+mysql -u root -proot
+drop database geracao_distribuida;
+
+/* Recuperando o banco de dados */
+source C:\Users\diego\dump.sql
+
+/* ou */
+mysql -u root -proot
+create database geracao_distribuida;
+/* Saindo do mysql */
+exit
+mysql -u root -p geracao_distribuida < C:\Users\diego\dump.sql
