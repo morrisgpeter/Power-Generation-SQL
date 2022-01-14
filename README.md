@@ -2,11 +2,11 @@
 Project Electric Generation
 
 Group 2
-Diego 
-Hugo
-Mayara
-Peter
-Rubens
+Diego <br>
+Hugo<br>
+Mayara<br>
+Peter<br>
+Rubens<br>
 
 MER - Requirements
 
